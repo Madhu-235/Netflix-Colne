@@ -1,0 +1,180 @@
+#signin_page {
+    /* background-color: #232323; */
+    height: 100%;
+    width: 100%; 
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0.9) 100%), url(https://wpassets.brainstation.io/app/uploads/2017/04/13100509/Netflix-Background.jpg);
+    /* background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%),url("https://assets.nflxext.com/ffe/siteui/vlv3/4da5d2b1-1b22-498d-90c0-4d86701dffcc/98a1cb1e-5a1d-4b98-a46f-995272b632dd/IN-en-20240129-popsignuptwoweeks-perspective_alpha_website_small.jpg" ); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+.signin {
+    height: 100%;
+    /* width: 100%;     */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 10px;
+
+
+}
+.signin-form{
+   display: grid;
+   /* grid-template-columns: repeat(1fr); */
+   /* place-items: center; */
+   justify-content: center;
+padding: 92px 535px 50px ;    
+/* padding: 0; */
+   /* margin-top: 50px; */
+   height: 100vh;
+}
+
+.signin-form .form{
+    background:rgba(0, 0, 0, 0.7);
+    /* background-color: aliceblue; */
+
+    width: 400px;
+    /* width: 100%; */
+    display: grid;
+   grid-template-columns: repeat(1fr);
+   /* place-items: center; */
+   justify-content: center;
+   /* justify-content: flex-start; */
+   text-align: left;
+   padding: 0px 68px;    
+   /* align-items: center; */
+}
+.signin-form .form h1{
+    color: white;
+}
+.signin-form .form form{
+    text-align: center;
+}
+
+.signin-form .form input{
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    /* background-color: black; */
+    background-color: transparent;
+    outline: none;
+    border: 1px solid var(--border-color--);
+    color: white;
+}
+
+.signin-form .form button{
+    width: 100%;
+    padding: 10px ;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: white;
+
+}
+
+.signin-form .form .btn1{
+    background-color: #C11119;
+    margin-bottom: 15px;
+}
+
+.signin-form .form .btn2{
+    background-color:rgba(178, 176, 176, 0.3);
+    margin-top: 15px;
+
+   
+}
+
+.signin-form .checkbox{
+    text-align: left !important;
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    /* justify-content:flex-start; */
+    font-size: 20xpx !important;
+    color: white;
+
+    
+}
+.signin-form .checkbox input{
+    /* font-size: 16px !important; */
+    width: 20px;
+    margin-top: 10px  ;  
+   accent-color: black;
+   background-color: black;
+   padding: 5px;
+
+   
+
+}
+
+.signin-form .checkbox input:checked{
+   accent-color: black;
+   outline: 1px solid white;
+   
+}
+
+.signup{
+    color: white;
+    font-weight: 400;
+}
+.signup a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+
+}
+
+.signup a:hover{
+    text-decoration:underline;
+
+}
+.small{
+    font-size: 12px;
+    color: #7D8C7B;
+    text-align: justify;
+    letter-spacing: -1px;
+}
+.Or{
+    color: white;
+    /* margin-bottom: 10px; */
+}
+
+.footer{
+    background-color:rgba(0, 0, 0, 0.5);
+    /* border: 2px solid white; */
+    /* height: 100vh; */
+}
+
+/* ------------media queries------------- */
+
+
+@media(max-width:1200px){
+    .signin-form .form{
+        padding:  40px 30px 0  ;
+
+        width: 400px;
+    }
+}
+@media(max-width:1000px){
+    .signin-form{
+        padding:  40px 30px 0  ;
+    }
+
+    .signin-form .form{
+        width: 100%;
+    }
+}
+
+@media(max-width:700px){
+    .signin-form{
+        padding:40px  0  0  ;
+    }
+
+    .signin-form .form{
+   padding: 0px 38px;    
+
+    }
+}

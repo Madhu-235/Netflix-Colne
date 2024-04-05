@@ -1,0 +1,105 @@
+.signup-page2{
+    display: grid;
+    place-items: center;
+    height: 93vh;
+    /* padding: 10px 0px; */
+    /* position: relative; */
+    /* width: 500px; */
+    box-sizing: content-box;
+    
+}
+.signup-page2 .box{
+    width: 440px;
+    display: grid;
+     /* justify-content: center; */
+     /* align-items: center; */
+    /* place-items: center; */
+    /* text-align: center;   */
+    /* row-gap: 1.5rem; */
+    /* padding: 20px 319px; */
+    /* position: absolute; */
+    line-height: 2rem;
+    letter-spacing: 1px;
+}
+
+.signup-page2 .box .step{
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 0px;
+
+}
+
+.signup-page2 .box .step .num{
+    font-weight: 600;
+}
+
+.signup-page2 .box h2{
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: .2px;
+    line-height: 40px;
+}
+
+.signup-page2 .box p{
+    font-size: 18px;
+    line-height: 23px;
+    color: #333D46;
+}
+
+
+
+
+
+
+.signup-page2 button{
+    width: 100%;
+    margin-top: 12px;
+    padding: 15px 0 ;
+    background-color: #F6121D;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.6rem;
+    
+}
+
+.signup-page2 input{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 7px 15px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color--);
+}
+
+.signup-page2 input:focus{
+    outline: 2px solid black;
+}
+/* ------media queries--------- */
+
+@media(max-width:1200px){
+    .signup-page2{
+        height: 80vh;
+    }
+}
+@media(max-width:500px){
+    
+    .signup-page2 .box{
+        padding: 0 30px;
+        
+        /* text-align: left; */
+    }
+}
+
+@media(max-width:400px){
+
+    .signup-page2{
+        height: 100vh;
+    }
+    .signup-page2 .box{
+        /* height: 100vh; */
+        padding: 80px 30px;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+}

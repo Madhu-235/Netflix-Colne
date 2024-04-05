@@ -1,0 +1,31 @@
+#footer3{
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    /* padding: 30px 76px 20px; */
+    /* background-color: rgba(0, 0, 0, .8); */
+    /* background-color: white; */
+    color: white !important;
+    /* margin: 0   ; */
+    width: 100%;
+}
+
+#footer3 .footer2 ul{
+    /* margin-right: 376px ; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: .5rem;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    line-height: 2rem;
+}
+
+#footer3 .footer2 .globe{
+    color: white;
+    padding: 0 !important;
+    border-radius: 5px;
+}
+
+#footer3 .footer2 .globe:active{
+    outline: 2px solid white;
+}

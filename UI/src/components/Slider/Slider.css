@@ -1,0 +1,263 @@
+*{
+    /* overflow-x: hidden; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main-slider-container{
+    width: 98.8vw;
+    /* position: relative; */
+    /* overflow-x: hidden; */
+    display: flex;
+    align-items: center;
+    margin-top: -7.5rem;    
+    /* border: 2px solid white; */
+    
+  
+
+
+}
+
+#slider{
+    /* width: 100%; */
+    /* height: 180px; */
+    /* white-space: nowrap; */
+    overflow-x: scroll;
+    overflow-y:hidden;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    padding-left: 3rem;
+    display: flex;
+    align-items: center;
+    /* position: relative; */
+    /* user-select: none; */
+
+}
+
+#slider::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+.slider-card{
+    /* position: relative; */
+    /* height: 300px; */
+    /* width: 280px;   */
+    /* border-radius: 10px;  */
+    /* width: 280px; */
+   
+    display: inline-block;
+    margin-left: 2px;
+    margin-right: 7px;
+    /* box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 12%); */
+    cursor: pointer;
+    border-radius: 5px;
+    object-fit: cover;
+
+}
+
+.slider-card-image{
+    position: relative;
+    height: 380px;
+    width: 280px;
+    display: flex;
+    align-items: center; 
+    /* border: 2px solid white;   */
+    /* justify-content: center;    */
+    padding-top: 20px;
+    
+
+}
+
+.slider-card-image .itemHover .src{
+    width:280px;
+    border-radius: 5px;
+    /* border: 2px solid aqua; */
+    /* margin-top: -28px; */
+    /* z-index: -1; */
+    
+
+   
+}
+.slider-card-image .itemHover .content_box{
+    /* z-index: 5; */
+    /* background-color:black; */
+
+}
+.slider-card-image .itemHover .content_box h4{
+    color:white;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 220px;
+    padding-left: 1rem;
+    text-align: left;
+    /* border: 1px solid white; */
+    margin-top: -40px;
+    font-size: 18px;
+}
+
+.slider-card-image .itemHover .content_box .icons{
+    size: 40px;
+    color: white;
+    /* border: 2px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 15px;
+    cursor: pointer;
+}
+
+/* .slider-card .slider-card-image .hover:hover h2{
+    display: block;
+} */
+.slider-card .itemHover{
+    border-radius:20% 20% 5px 5px;
+    /* border: 2px solid white; */
+    /* top: 10%; */
+    /* height: 500px; */
+    /* z-index: 5; */
+
+
+
+}
+
+.slider-card .itemHover:hover{
+    transform: scale(1.5);
+    padding: 10px 0;
+    height: 300px;
+    position: absolute;
+    top:0%;
+    display: block;
+    z-index: 3;
+    bottom: 0%;
+    background-color:#212121;
+    transition: .3s;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+   
+   
+    
+}
+
+.slider-card .itemHover:hover .pic{
+    display: none;
+}
+
+.slider-card .itemHover:hover .vid{
+    display: block;
+    width: 250px;    
+    margin-top: 39px;
+    cursor:auto;
+    border-radius:7px 7px 0 0;
+
+
+    
+    
+}
+
+
+
+.slider-card .slider-card-image .vid{
+    display: none;
+}
+
+
+
+
+.slider-icon.left, .slider-icon.right {
+    border-radius: 100%;
+    position: absolute;
+    cursor: pointer;
+    color: white;
+    display: none;
+    /* top: 40px; */
+    margin-top: 20px;
+}
+
+.slider-icon.left{
+    left: 0;
+    height: 155px;
+    width: 50px;
+    border-radius:15px 0px 0px 15px;
+    background-color: none;
+    opacity: .5;
+    z-index: 5;
+}
+
+.slider-icon.right{
+    right: 0;
+    height: 155px;
+    width: 50px;
+    border-radius:0px 15px 15px 0px;
+    background-color: none;
+    opacity: .5;
+    background-color: rgba(0,0,0,.3);
+    color: white;
+    z-index: 5;
+}
+
+.slider-icon.left:hover{
+    opacity: 1;
+    background-color: rgba(0,0,0,.3);
+    color: white;
+}
+
+.slider-icon.right:hover{
+    opacity: 1;
+    background-color: rgba(0,0,0,.3);
+    color: white;
+}
+
+#main-slider-container:hover .slider-icon{
+    display: block;
+}
+
+
+
+/* -----media queries---- */
+
+@media(max-width:760px){
+    #main-slider-container{
+        
+        margin-top: -0rem;    
+       
+    
+    }
+    
+    .slider-card .itemHover:hover{
+        transform: scale(1.0);
+        position: absolute;
+        top:10%;
+        /* left:0; */
+        /* right: 0; */
+        display:none;
+        /* background-color: black; */
+        /* z-index: 10; */
+        /* width: 280px; */
+        bottom: 0;
+        z-index: 1;
+        background-color:#1f1e1e;
+        /* color: black; */
+        /* border-radius: 100px; */
+        
+    }
+    .slider-card-image .itemHover .src{
+        width:260px;
+    }
+
+    .slider-card-image{
+       
+        height: 150px;
+        /* width: 280px; */
+       
+    
+       
+    }
+    
+    
+   
+    
+    
+}

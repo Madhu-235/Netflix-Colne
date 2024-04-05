@@ -1,0 +1,100 @@
+#main-cards-container{
+    display: grid;
+    /* align-items: center; */
+    width: 98.8vw;
+    height: 100vh;
+    padding: 12rem 1rem ;
+    background-color: black;
+    overflow: hidden;
+    overflow-y: scroll; 
+    scrollbar-width: none; 
+    
+
+
+}
+
+#cardsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    gap: 1rem;
+    row-gap: 5rem;
+}
+#cardsContainer .Card .imgCard{
+    width: 280px;
+    height: 150px;
+    /* border: 2px solid white; */
+    display: grid;
+    justify-content: center;
+    /* border: 7px; */
+
+
+}
+
+#cardsContainer .Card .imgCard .itemHover .src{
+    width: 280px;
+    border-radius: 7px;
+    
+}
+
+#cardsContainer .Card .imgCard .itemHover .vid{
+    display: none;
+}
+#cardsContainer .Card .imgCard .itemHover .content_box{
+    padding-left: 10px;
+}
+#cardsContainer .Card .imgCard .itemHover .content_box h4{
+    color:white;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 220px;
+    
+    text-align: left;
+    /* border: 1px solid white; */
+    /* margin-top: -40px; */
+    font-size: 18px;
+}
+
+#cardsContainer .Card .imgCard .itemHover .content_box .icons{
+    size: 40px;
+    color: white;
+    /* border: 2px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 15px;
+    cursor: pointer;
+}
+#cardsContainer .Card .imgCard .itemHover:hover{
+    transform: scale(1.2);
+    /* padding: 10px 0; */
+    height: 250px;
+   
+
+    z-index: 1;
+    border-radius: 10px;
+    background-color:#212121;
+    transition: .3s;
+   
+   
+    
+}
+
+#cardsContainer .Card .imgCard .itemHover:hover .pic{
+    display: none;
+}
+
+#cardsContainer .Card .imgCard .itemHover:hover .vid{
+    display: block;
+    width: 250px;    
+    /* margin-top: 39px; */
+    cursor:auto;
+    border-radius:7px 7px 0 0;
+
+
+    
+    
+}
+
+

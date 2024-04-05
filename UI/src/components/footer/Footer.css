@@ -1,0 +1,64 @@
+.footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 80px 175px;
+    background: #000;
+    margin-top: 10px;
+    /* padding-top: 50px; */
+}
+.footer .num{
+    color: #B7B7B7;
+
+   
+}
+.footer .num h3{
+    font-size: 20px;
+
+}
+.footer .num span{
+    text-decoration: underline;
+    font-size: 20px;
+
+}
+
+.footer .help{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10rem;
+    list-style: none;
+    padding: 20px 0;
+    line-height: 35px;
+    /* justify-content: space-between; */
+}
+
+.footer .help a{
+    color: #B7B7B7;
+
+
+}
+option{
+    color: black;
+}
+
+/* .footer .lang{
+    border: none;
+} */
+
+.footer .netflix{
+    color: #B7B7B7;
+   margin-top: 25px;
+   font-size: 14px;
+
+}
+
+/* --------- */
+
+@media(max-width:1250px){
+    .footer{
+    padding: 10px 15px;
+    transition: .3s all;
+    padding-top: 50px;
+
+
+    }
+}
